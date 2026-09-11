@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXIO - Build Your Future | Internships</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">NEXIO<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <button class="btn-nav">Join Now</button>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">🚀 NEXIO Summer Internship 2026 Open</span>
+            <h1>Internship That <span>Actually</span> Makes You Industry Ready.</h1>
+            <p>Learn, Build, and Get Hired. Real projects, mentorship from experts at TKR & NEXIO Labs.</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="scrollToSection('internships')">Explore Roles</button>
+                <button class="btn-secondary">View Projects</button>
+            </div>
+            <div class="stats">
+                <div><h3>500+</h3><p>Interns Placed</p></div>
+                <div><h3>40+</h3><p>Partner Companies</p></div>
+                <div><h3>4.9/5</h3><p>Rating</p></div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="card-float">💻 Web Dev Intern</div>
+            <div class="card-float card-2">🎨 UI/UX Intern</div>
+        </div>
+    </section>
+
+    <!-- Internships -->
+    <section id="internships" class="internships">
+        <h2 class="section-title">Featured Internship Domains</h2>
+        <div class="cards-container">
+            <div class="intern-card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JS, React, Node.js. Build NEXIO main website.</p>
+                <span class="duration">Duration: 3 Months</span>
+                <button class="apply-btn" data-role="Web Development">Apply Now</button>
+            </div>
+            <div class="intern-card">
+                <div class="icon">🤖</div>
+                <h3>AI / ML</h3>
+                <p>Python, ML models, Chatbots for NEXIO platform.</p>
+                <span class="duration">Duration: 4 Months</span>
+                <button class="apply-btn" data-role="AI/ML">Apply Now</button>
+            </div>
+            <div class="intern-card">
+                <div class="icon">📱</div>
+                <h3>App Development</h3>
+                <p>Flutter / React Native. Build NEXIO student app.</p>
+                <span class="duration">Duration: 3 Months</span>
+                <button class="apply-btn" data-role="App Development">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="apply-section">
+        <div class="form-box">
+            <h2>Apply for NEXIO Internship</h2>
+            <form id="internForm">
+                <input type="text" id="name" placeholder="Full Name (ex: Sandeep)" required>
+                <input type="email" id="email" placeholder="Email (ex: sandeep@tkr.edu)" required>
+                <select id="role" required>
+                    <option value="">Select Domain</option>
+                    <option>Web Development</option>
+                    <option>AI / ML</option>
+                    <option>App Development</option>
+                    <option>UI/UX Design</option>
+                </select>
+                <textarea id="message" placeholder="Why do you want to join NEXIO?"></textarea>
+                <button type="submit" class="btn-primary">Submit Application</button>
+                <p id="successMsg"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 NEXIO Labs | Built by Interns for Interns | Hayathnagar, Hyderabad</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
