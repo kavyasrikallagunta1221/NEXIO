@@ -1,0 +1,53 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Inter', sans-serif; background:#0a0a0b; color:white; overflow-x:hidden; }
+h1,h2,h3,.logo { font-family: 'Space Grotesk', sans-serif; }
+
+/* Navbar */
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:20px 8%; position:fixed; width:100%; background:rgba(10,10,11,0.8); backdrop-filter:blur(10px); z-index:100; }
+.logo { font-size:28px; font-weight:700; } .logo span { color:#7c5cff; }
+.nav-links { display:flex; gap:30px; list-style:none; }
+.nav-links a { color:#ccc; text-decoration:none; transition:0.3s; }
+.nav-links a:hover { color:white; }
+.btn-nav { background:white; color:black; padding:10px 22px; border-radius:20px; border:none; font-weight:600; cursor:pointer; }
+
+/* Hero */
+.hero { display:flex; padding:140px 8% 80px; gap:50px; align-items:center; min-height:100vh; }
+.hero-content { flex:1.2; }
+.badge { background:#1a1a24; border:1px solid #2a2a3a; padding:8px 16px; border-radius:30px; font-size:13px; color:#a79cff; }
+.hero-content h1 { font-size:58px; line-height:1.1; margin:20px 0; }
+.hero-content h1 span { color:#7c5cff; }
+.hero-content p { color:#aaa; font-size:18px; max-width:500px; margin-bottom:25px; }
+.hero-btns { display:flex; gap:15px; margin-bottom:40px; }
+.btn-primary { background:#7c5cff; color:white; padding:14px 28px; border-radius:30px; border:none; font-weight:600; cursor:pointer; transition:0.3s; }
+.btn-primary:hover { background:#6a4ae8; transform:translateY(-2px); }
+.btn-secondary { background:transparent; border:1px solid #333; color:white; padding:14px 28px; border-radius:30px; cursor:pointer; }
+.stats { display:flex; gap:40px; }
+.stats h3 { font-size:28px; } .stats p { font-size:14px; color:#888; }
+
+/* Cards */
+.internships { padding:80px 8%; background:#111113; }
+.section-title { text-align:center; font-size:36px; margin-bottom:50px; }
+.cards-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
+.intern-card { background:#18181b; border:1px solid #27272a; padding:30px; border-radius:20px; transition:0.3s; }
+.intern-card:hover { border-color:#7c5cff; transform:translateY(-5px); }
+.intern-card .icon { font-size:32px; background:#222; width:60px; height:60px; display:grid; place-items:center; border-radius:12px; margin-bottom:15px; }
+.duration { display:block; margin:12px 0; color:#7c5cff; font-size:13px; }
+.apply-btn { width:100%; background:white; color:black; border:none; padding:12px; border-radius:10px; font-weight:600; cursor:pointer; margin-top:10px; }
+
+/* Form */
+.apply-section { padding:80px 8%; display:flex; justify-content:center; }
+.form-box { background:#18181b; padding:40px; border-radius:20px; width:100%; max-width:500px; border:1px solid #27272a; }
+.form-box h2 { margin-bottom:20px; }
+.form-box input, .form-box select, .form-box textarea { width:100%; background:#0a0a0b; border:1px solid #2a2a3a; color:white; padding:14px; border-radius:10px; margin-bottom:15px; outline:none; }
+.form-box textarea { height:100px; resize:none; }
+#successMsg { margin-top:15px; color:#4ade80; text-align:center; }
+
+footer { text-align:center; padding:30px; color:#666; border-top:1px solid #1a1a1a; }
+
+/* Hero floats */
+.hero-image { flex:0.8; position:relative; height:400px; }
+.card-float { position:absolute; background:white; color:black; padding:18px 24px; border-radius:16px; font-weight:700; box-shadow:0 20px 40px rgba(0,0,0,0.4); animation:float 3s ease-in-out infinite; }
+.card-2 { top:180px; right:20px; animation-delay:1s; }
+@keyframes float { 0%,100%{ transform:translateY(0)} 50%{ transform:translateY(-15px)} }
+
+@media(max-width:900px){ .hero{flex-direction:column} .hero-content h1{font-size:36px} }
